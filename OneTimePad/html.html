@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OneTimePad</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h1>One Time Pad (XOR-Encryption)</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                <legend>Plaintext</legend>
+                <textarea id="plaintext" class="form-control"></textarea><br>
+                <button disabled class="btn btn-primary" id="analyze_plaintext">Analyze Plaintext</button>
+                <br>
+                <br>
+                <button disabled class="btn btn-primary" id="encrypt">encrypt</button>        
+            </div>
+
+            <div class="col-md-6">
+                <br>
+                <legend>Histogram Plaintext</legend>
+                <div id="chart_plaintext"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col—md—12">
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-6">
+                    <br>
+                    <legend>Ciphertext</legend>
+                    <span>Plaintext: </span><span id="plaintextSpan"></span>
+                    <textarea disabled id="ciphertext" class="form-control"></textarea>
+                    <br>
+                    <button disabled class="btn btn-primary" id="analyze_ciphertext">Analyze Ciphertext</button>
+                    <br>
+                    <br>
+                    <button disabled class="btn btn-primary" id="decrypt">decrypt</button>
+                    <span>using key</span>
+                    <input disabled id="decryptkey" type="text" class="form-control" style="width:200px;display:inline-block;"/>
+                </div>
+    
+                <div class="col-md-6">
+                    <br>
+                    <legend>Histogram Ciphertext</legend>
+                    <div id="chart_ciphertext"></div>
+                </div>
+            </div>
+    </div>
+
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>
