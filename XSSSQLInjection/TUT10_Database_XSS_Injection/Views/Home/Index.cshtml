@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <form action="~/Home/DoLogin" method="post">
+        <label>Username</label>
+        <input name="username" type="text" />
+        <br />
+        <label>Password</label>
+        <input type="password" name="password" />
+        <br />
+
+        <button name="submit" value="Login">Login</button>
+
+    </form>
+    @Html.Raw(ViewBag.Message)
+
+</div>
